@@ -5,7 +5,10 @@ using namespace std;
 bool numberExists(vector<int> ordered_numbers,int x,int inicio, int fin)
 {
     if(inicio>fin)
+    {
         return false;
+    }
+
     int medio = (inicio + fin)/2;
     if(ordered_numbers[medio]<x)
     {
